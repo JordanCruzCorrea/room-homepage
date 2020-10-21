@@ -1,0 +1,177 @@
+:root {
+  --dark-gray: hsl(0, 0%, 63%);
+  --black: hsl(0, 0%, 0%);
+  --white: hsl(0, 0%, 100%);
+  --very-dark-gray: hsl(0, 0%, 27%);
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  font-size: 12px;
+  font-family: "Spartan", sans-serif;
+  /* display: grid; */
+  /* place-items: center; */
+  min-height: 100vh;
+}
+
+#box-container {
+  height: 900px;
+  max-width: 1440px;
+}
+
+#burger {
+  z-index: 30;
+}
+
+header {
+  padding: 2.25rem 1rem;
+  width: 100vw;
+}
+
+#burger {
+  z-index: 30;
+}
+
+header {
+  padding: 2.25rem 1rem;
+  width: 100vw;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+}
+
+nav a {
+  color: var(--black);
+  margin: 0 1rem;
+  padding-bottom: 0.5rem;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+nav a:hover {
+  border-bottom: 3px solid white;
+}
+
+.logo {
+  margin-left: 7rem;
+}
+
+article.top {
+  padding: 3rem 2rem;
+  height: 390px;
+}
+
+img {
+  animation: fade ease-in-out 1s;
+}
+
+.slide-btns-container {
+  width: 7rem;
+}
+
+.arrow-container:hover {
+  background-color: var(--very-dark-gray);
+  animation: slideArrow ease-in-out 0.2s;
+}
+
+h1 {
+  margin: 1.3rem 0;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+p {
+  color: var(--dark-gray);
+}
+
+.shop-btn {
+  margin: 2.75rem 0 1rem 0;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+}
+
+article.bottom {
+  padding: 2.75rem 2rem;
+  font-size: 13px;
+  line-height: 1.25rem;
+}
+
+article.bottom p {
+  line-height: 1.25rem;
+}
+
+h2 {
+  margin: 0 0 0.75rem 0;
+  letter-spacing: 0.25rem;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideArrow {
+  0% {
+    background-color: var(--black);
+  }
+  100% {
+    background-color: var(--very-dark-gray);
+  }
+}
+
+@media (min-width: 376px) {
+  nav {
+    position: relative;
+  }
+
+  nav a {
+    color: var(--white);
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  #hero-img {
+    width: 88%;
+  }
+
+  .slide-btns-container {
+    width: 9.75rem;
+    margin-right: -2.55rem;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+    line-height: 2.5rem;
+  }
+
+  article.top p {
+    line-height: 1.25rem;
+  }
+
+  article.top {
+    height: 100%;
+  }
+
+  article.bottom {
+    padding: 4.8rem 3rem;
+  }
+
+  article.bottom p {
+    line-height: 1.2rem;
+  }
+}
